@@ -41,7 +41,7 @@ async function funcionConPromesaAwaitTimeout(){
     let miPromesa = new Promise(resolver => {
         setTimeout(()=> resolver('promesa con await y timeout'), 3000);
     });
-    console.log( await miPromesa);
+    console.log( await miPromesa);  //Espera y luego coloca el fin de la funcion
     console.log('fin función');
 }
 

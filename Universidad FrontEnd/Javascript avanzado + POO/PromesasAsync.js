@@ -24,7 +24,7 @@ async function funcionConPromesaYAwait(){
         resolver('Promesa con await');
     });
 
-    console.log( await miPromesa );
+    console.log( await miPromesa ); 
 }
 
 funcionConPromesaYAwait();
