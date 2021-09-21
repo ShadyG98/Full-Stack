@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe en HTML</title>
+    <link href="/css/estilos.css" rel='stylesheet'/>
+</head>
+<body>
+    <header>
+        <h1>Etiquetas Semánticas en HTML5</h1>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+        <a href="#">Acerca De</a>
+    </nav>
+    <section>
+        <h2>Sección 1</h2>
+        <p>Información de la sección.</p>
+        <aside>
+            <p>Nombre del Autor</p>
+        </aside>
+    </section>
+    <section>
+        <h2>Sección 2</h2>
+        <article>
+            <h3>Artículo 1</h3>
+        </article>
+        <article>
+            <h3>Artículo 2</h3>
+        </article>
+    </section>
+    <footer>
+        <h2>
+            <a href="http://www.globalmentoring.com.mx">
+                GlobalMentoring.com.mx
+            </a>
+        </h2>
+    </footer>
+    <h1 class='titulo'>Uso de iframe en HTML</h1>
+    
+    <iframe src='texto.html' name='marco1' class="marco"></iframe>
+
+    <div class='centrar'>
+        <a href="http://globalmentoring.com.mx" target="marco1" class='boton'>
+            Cargar Sitio Global Mentoring
+        </a>
+    </div>
+
+    <h1>Formularios en HTML</h1>
+    <form action="mi_servidor">
+        <fieldset>
+            <legend>Datos Persona:</legend>
+
+            <label for="idPersona">Id Persona:</label><br/>
+            <input type="text" id="idPersona" name="idPersona" 
+                readonly="true" value="100" /><br/>
+
+            <input type="hidden" id="sistema" name="sistema" value="SAP"/>
+
+            <label for="nombre">Nombre:</label><br/>
+            <input type="text" id="nombre" name="nombre" 
+                placeholder="Escribe tu nombre" required="true"/><br/>
+
+            <label for="apellido">Apellido:</label><br/>
+            <input type="text" id="apellido" name="apellido"
+                placeholder="Escribe tu apellido" required="true"/><br/>
+
+            <label for="email">Email:</label><br/>
+            <input type="email" id="email" name="email"/><br/> 
+
+            <label for="edad">Edad:</label><br/>
+            <input type="number" id="edad" name="edad"/><br/>
+
+            <label>Género</label><br/>
+            <input type="radio" id="femenino" name="genero" value="femenino"/>
+            <label for="femenino">Femenino</label><br/>
+            <input type="radio" id="masculino" name="genero" value="masculino"/>
+            <label for="masculino">Masculino</label><br/>     
+            
+            <label>Género Música Favorita</label><br/>
+            <input type="checkbox" id="clasica" name="musica" value="clasica"/>
+            <label for="clasica">Clásica</label><br/>
+            <input type="checkbox" id="jazz" name="musica" value="jazz"/>
+            <label for="jazz">Jazz</label><br/>
+            
+            <label for="autos">Marca Auto favorita:</label><br/>
+            <select id="autos" name="autos">
+                <option value="volvo">Volvo</option>
+                <option value="bmw">BMW</option>
+                <option value="audi" selected="true">Audi</option>
+            </select><br/>
+
+            <label for="comentario">Comentario:</label><br/>
+            <textarea id="comentario" name="comentario" rows="2" cols="30"
+            >Este es mi comentario    
+            </textarea><br/>
+
+            <br/>
+            <input type="submit" value="Enviar"/>
+            <input type="submit" formnovalidate="formnovalidate" 
+                value="Enviar sin validar"/>
+            <input type="reset" value="Restablecer"/>
+            
+        </fieldset>    
+    </form>
+
+    <div class="contenedor">
+        <h2>Login</h2>
+        <form id="forma" name="forma" method="POST">
+            <div class="elemento">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" required="true"/>
+            </div>
+            <div class="elemento">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="passwrod" required="true"/>
+            </div>
+            <div class="elemento">
+                <input type="submit" value="Enviar"/>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
